@@ -12,12 +12,12 @@ function App() {
       <div className="show h-[20vh]">
         <div className="diff aspect-[16/9] h-[20vh]">
           <div className="diff-item-1">
-            <div className="bg-primary text-primary-content text-9xl font-black grid place-content-center">
+            <div className="bg-primary text-primary-content text-7xl font-black grid place-content-center sm:text-9xl">
               CALL ME
             </div>
           </div>
           <div className="diff-item-2">
-            <div className="bg-base-200 text-9xl font-black grid place-content-center">
+            <div className="bg-base-200 text-7xl font-black grid place-content-center sm:text-9xl">
               EMAIL ME
             </div>
           </div>
@@ -25,8 +25,8 @@ function App() {
         </div>
       </div>
 
-      <form className="flex mt-5">
-        <div className="mail h-[60vh] flex flex-col gap-2  w-[50%]  justify-around ">
+      <form className="flex mt-5 flex-col sm:flex-row">
+        <div className="mail h-[60vh] flex flex-col gap-2 w-full sm:w-[50%]  justify-around ">
           <label className="input input-bordered flex items-center gap-2 h-[10vh]">
             Name :
             <input type="text" className="grow" placeholder="Your name here" />
@@ -48,7 +48,7 @@ function App() {
 
           <button className="btn btn-secondary" onSubmit={sendEmail}>Send</button>
         </div>
-        <div className="call h-[60vh]  w-[50%] flex items-center justify-center">
+        <div className="call h-[60vh]  w-full flex items-center justify-center sm:w-[50%]">
           <button className="btn btn-primary h-[80%] w-[80%] ">
             <a href="tel:+917366928995">Call me </a>
             </button>
